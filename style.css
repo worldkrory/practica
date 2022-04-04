@@ -1,0 +1,68 @@
+#cajaGal {
+    position: relative;
+    width: 640px;
+    height: 550px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul.galeria li {
+    position:absolute;
+    opacity:0;
+}
+
+ul.galeria #img1:first-child {
+    opacity:1;
+
+}
+
+ul.galeria li:target {
+    opacity:1;
+}
+
+ul.galeria li img {
+    width: 640px;
+    height: 480px;
+}
+
+nav.menuslider {
+    width: 72vw;
+    position: relative;
+    top: 500px;
+}
+
+nav.menuslider ul {
+    background-color: beige;
+}
+
+nav.menuslider ul {
+    display: flex;
+    justify-content: space-around; /* Espacios entre elementos li */
+    flex-wrap: wrap;
+}
+
+nav.menuslider ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.menuslider ul li a {
+    text-decoration: none;
+}
+
+div.footer p {
+    position: relative;
+    top: auto;
+}
+
+footer {
+    top: auto;
+}
+
+figure img {
+    width: 100px;
+    height: 100px;
+}

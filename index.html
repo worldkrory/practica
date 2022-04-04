@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="Esta es mi primera página" />
-        <title>Mi Hola Mundo en HTML</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Hermoso picnic de Manizales, con la mejor vista a la ciudad y paisajes hermosos.">
+        <title>PAGINA2 Picnic Mirador de Don Pedro </title>
+        <link rel="stylesheet" href="style.css">
+        <link id="nav-file" href="nav.html" rel="import" />
+        
     </head>
     <body>
         <header>
-            <nav></nav>
+            <nav>
+                <section>
+                    <ul>
+                        <li><a href="index.html">🏠 INICIO</a></li>
+                        <li><a href="menu.html">📜 MENU</a></li>
+                        <li><a href="horarios.html">📅 HORARIOS</a></li>
+                        <li><a href="info.html">ℹ️ INFORMACION</a></li>
+                    </ul>
+                </section>
+            </nav>
         </header>
         <main>
-            <section>
-                <h1>POLKA ES HERMOSA</h1>
-                <h2>Aunque se tire peditos</h2>
-                <h3>Pero aun asi la amamos</h3>
-                <p>En esta etiqueta se escriben párrafos</p>
-                <a href="#">Enlace</a>
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-					<li>Elemento 3</li>
+            <div id="cajaGal">
+                <ul class="galeria">
+                    <li id="img1"> <img src="images/img1.JPG" alt=""></li>
+                    <li id="img2"> <img src="images/img2.JPG" alt=""> </li>
+                    <li id="img3"> <img src="images/img3.JPG" alt=""></li>
+                    <li id="img4"> <img src="images/img4.JPG" alt=""></li>
+                    <li id="img5"> <img src="images/img5.JPG" alt=""></li>
+                    <li id="img6"> <img src="images/img6.JPG" alt=""></li>
                 </ul>
-				<ol>
-					<li>Elemento 1</li>
-					<li>Elemento 2</li>
-					<li>Elemento 3</li>
-				</ol>
+                <nav class="menuslider">
+                    <ul>
+                        <li> <a href="#img1">Hamburguesas</a></li>
+                        <li> <a href="#img2">Perro Caliente</a></li>
+                        <li> <a href="#img3">Salchipapa </a></li>
+                        <li> <a href="#img4">Plato Chicharron</a></li>
+                        <li> <a href="#img5">Pechuga Gratinada</a></li>
+                        <li> <a href="#vid1">Hamburguesa</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <P>Aqui podras observar nuestras zonas dentro del picnic
+            </P>
+            <ol>
+                <li>Zona de Casetas</li>
+                <li>Terraza Opele</li>
+                <li>Salon Picnic</li>
+            </ol>
+            <figure>
+                <img src="images/logo.jpg" alt="Escudo de la Universidad Nacional">
+                <figcaption>Logo de Picnic mirador de don Pedro </figcaption>
+            </figure>
 
-                <img src="hambur.JPG" alt="Esta es la imagen de una hamburguesa">
-                <figcaption>TE INVITO A COMER UNA HAMBURGUESA</figcaption>
-            </section>
+            
         </main>
         <footer>
-
+            <hr>
+            <div class="footer">
+                <p>Restaurante tipo Picnic, Mirador, ambiente campestre, estructura en Guadua, artesanal, cultural en la ciudad de Manizales, Caldas, ofrece deliciosos platos de la gastronomía Colombiana, gastronomía Cafetera, espacio para eventos como Terraza Opelee, Salon en Guadua, espacios libres, privados, familiares, acceso a mascotas, petfriendly, brinda excelentes paisajes, atardeceres, naturaleza, vista a la ciudad de Manizales, Nevado del Ruiz, Villamaría, Rio Chichina, excelente transporte, vía principal antigua de Manizales a Chichina, parqueadero amplio, buena experiencia, buena atención al cliente, pagos en efectivo, datáfono (Visa, MasterdCard), transferencias Bancolombia, QR Bancolombia, Nequi.
+                    Opeleee! </p>
+            </div>
         </footer>
     </body>
 </html>
