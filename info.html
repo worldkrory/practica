@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Hermoso picnic de Manizales, con la mejor vista a la ciudad y paisajes hermosos.">
+        <title>PAGINA2 Picnic Mirador de Don Pedro </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏠 INICIO</a></li>
+                    <li><a href="menu.html">📜 MENU</a></li>
+                    <li><a href="horarios.html">📅 HORARIOS</a></li>
+                    <li><a href="info.html">ℹ️ RESERVA YA!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3>RESERVA CON NOSOTROS</h3>
+            <p>A traves de este formulario puedes reservar con nosotros en la fecha que mas te guste, las reservas se procesaran y confirmaran en un plazo de 24 horas.</p>
+            <br>
+            <div id="formulario">
+                <form action="">
+                    <label for="nombre">
+                        <span>Nombres y apellidos: </span>
+                        <input type="text" id="nombre" placeholder="Nombre completo">
+                    </label>
+                    <br><br>
+                    <label for="fecha">
+                        <span>Dia de la reserva: </span>
+                        <input type="date" name="fechaR" id="fecha">
+                    </label>
+                    <br><br>
+                    <label for="hora">
+                        <span>Hora de la reserva: </span>
+                        <input type="time" id="hora">
+                    </label>
+                    <br><br>
+                    <label for="celular">
+                        <span>Celular: </span>
+                        <input type="text" name="cel" id="phone">
+                    </label>
+                    <br><br>
+                    <label for="tema">
+                        <!--
+                            <input list="tema" placeholder="selecciona la tematica">
+                        <datalist id="tema">
+                            <option value="🎂 Cumpleanos"></option>
+                            <option value="❤ Pareja"></option>
+                            <option value="👪 Familiar"></option>
+                            <option value="📉 Reunion"></option>
+                            <option value="🔘 Otros"></option>
+                        </datalist>
+                        -->
+                        <span>Elige la tematica: </span>                        
+                        <select name="tema" id="tematica">
+                            <option value="Cumpleanos">🎂 Cumpleanos</option>
+                            <option value="Pareja">❤ Pareja</option>
+                            <option value="Familiar">👪 Familiar</option>
+                            <option value="Reunion">📉 Reunion</option>
+                            <option value="Otros">🔘 Otros</option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <label for="politicas">
+                        <input type="radio" name="politicas" id="policy">
+                        <span>Al enviar este formulario aceptas nuestros terminos y condiciones.</span>
+                    </label>
+                    <br><br>
+                    <button id="enviar">RESERVAR</button>
+                    <script>
+
+                        var boton = document.getElementById("enviar");
+                        var policy = document.getElementById("policy");
+                        boton.onclick = function(){
+                            if(policy.checked){
+                                alert("ACEPTASTE PONERNOS 5.0 EN ESTE TRABAJO, BUEN TRABAJO! ;)");
+                            }else{
+                                alert("ACEPTA LOS TERMINOS Y CONDICIONES");
+                            }
+                        }
+                    </script>
+                </form>
+            </div>                    
+        </main>
+        <footer>
+            <hr>
+            <div class="footer">
+                <p>Restaurante tipo Picnic, Mirador, ambiente campestre, estructura en Guadua, artesanal, cultural en la ciudad de Manizales, Caldas, ofrece deliciosos platos de la gastronomía Colombiana, gastronomía Cafetera, espacio para eventos como Terraza Opelee, Salon en Guadua, espacios libres, privados, familiares, acceso a mascotas, petfriendly, brinda excelentes paisajes, atardeceres, naturaleza, vista a la ciudad de Manizales, Nevado del Ruiz, Villamaría, Rio Chichina, excelente transporte, vía principal antigua de Manizales a Chichina, parqueadero amplio, buena experiencia, buena atención al cliente, pagos en efectivo, datáfono (Visa, MasterdCard), transferencias Bancolombia, QR Bancolombia, Nequi.
+                    Opeleee! </p>
+                <figure>
+                    <img src="images/logo.jpg" alt="Escudo de la Universidad Nacional" width="120px" height="100px">
+                    <figcaption>Logo de Picnic mirador de don Pedro </figcaption>
+                </figure>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="Esta es mi primera página" />
-        <title>Mi Hola Mundo en HTML</title>
-        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Hermoso picnic de Manizales, con la mejor vista a la ciudad y paisajes hermosos.">
+        <title>INICIO | Picnic Mirador de Don Pedro </title>
+        <link id="nav-file" href="nav.html" rel="import" />
+        
     </head>
     <body>
         <header>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏠 INICIO</a></li>
+                    <li><a href="menu.html">📜 MENU</a></li>
+                    <li><a href="horarios.html">📅 HORARIOS</a></li>
+                    <li><a href="info.html">ℹ️ RESERVA YA!</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section>
-                <h1>POLKA ES HERMOSA</h1>
-                <h2>Aunque se tire peditos</h2>
-                <h3>Pero aun asi la amamos</h3>
-                <p>En esta etiqueta se escriben párrafos</p>
-                <a href="#">Enlace</a>
-                <ul>
-                    <li>Elemento 1</li>
-                    <li>Elemento 2</li>
-					<li>Elemento 3</li>
-                </ul>
-				<ol>
-					<li>Elemento 1</li>
-					<li>Elemento 2</li>
-					<li>Elemento 3</li>
-				</ol>
+            <div id="cajaGal">
+                <h2>NAVEGA EN NUESTRA GALERIA</h2>
+                <nav class="menuslider">
+                    <p>⬇️ Elige aqui la fotografia de tu interes: ⬇️</p>
+                    <ul>
+                        <li> <a href="#img1">Hamburguesas y Perros Calientes</a></li>
+                        <li> <a href="#img3">Salchipapa y Plato Chicharron </a></li>
+                        <li> <a href="#img5">Pechuga Gratinada y Hamburguesa</a></li>
+                    </ul>
+                    <p>⬇️ Aqui podras observar nuestras zonas dentro del picnic: ⬇️</p>
+                    <ol>
+                        <li><a href="#img2">Zona de Casetas</a></li>
+                        <li><a href="#img4">Terraza Opele</a></li>
+                        <li><a href="#img6">Salon Picnic</a></li>
+                    </ol> 
+                </nav>
+                <div class="galeria">
+                    <h2>GALERIA DE FOTOS DE COMIDA</h2>
 
-                <img src="hambur.JPG" alt="Esta es la imagen de una hamburguesa">
-                <figcaption>TE INVITO A COMER UNA HAMBURGUESA</figcaption>
-            </section>
+                    <table>
+                        <tr>
+                            <td><img id="img1" src="images/img1.JPG" width="480px" height="360px"></td>
+                            <td><img src="images/img2.JPG" width="480px" height="360px"></td>
+                        </tr>
+                        <tr>
+                            <td><img id="img3" src="images/img3.JPG" width="480px" height="360px"></td>
+                            <td><img src="images/img4.JPG" width="480px" height="360px"></td>
+                        </tr>
+                        <tr>
+                            <td><img id="img5" src="images/img5.JPG" width="480px" height="360px"></td>
+                            <td><img src="images/img6.JPG" width="480px" height="360px"></td>
+                        </tr>
+                    </table>
+
+                    <h2>GALERIA DE FOTOS DE LUGARES</h2>
+                    <img id="img2" src="images/img7.JPG" width="970px" height="720px">
+                    <img id="img4" src="images/img8.JPG" width="970px" height="720px">
+                    <img id="img6" src="images/img9.JPG" width="970px" height="720px">
+                    
+                    
+                    
+                </div>
+            </div>           
         </main>
         <footer>
-
+            <hr>
+            <div class="footer">
+                <h4>PICNIC MIRADOR DE DON PEDRO</h4>
+                <p>Restaurante tipo Picnic, Mirador, ambiente campestre, estructura en Guadua, artesanal, cultural en la ciudad de Manizales, Caldas, ofrece deliciosos platos de la gastronomía Colombiana, gastronomía Cafetera, espacio para eventos como Terraza Opelee, Salon en Guadua, espacios libres, privados, familiares, acceso a mascotas, petfriendly, brinda excelentes paisajes, atardeceres, naturaleza, vista a la ciudad de Manizales, Nevado del Ruiz, Villamaría, Rio Chichina, excelente transporte, vía principal antigua de Manizales a Chichina, parqueadero amplio, buena experiencia, buena atención al cliente, pagos en efectivo, datáfono (Visa, MasterdCard), transferencias Bancolombia, QR Bancolombia, Nequi.
+                    Opeleee! </p>
+                <figure>
+                    <img src="images/logo.jpg" alt="Escudo de la Universidad Nacional" width="120px" height="100px">
+                    <figcaption>Logo de Picnic mirador de don Pedro </figcaption>
+                </figure>
+            </div>
         </footer>
     </body>
 </html>
